@@ -17,11 +17,11 @@ app.get("/api/notes", function(req, res) {
 app.post("/api/notes", function(req, res) {
   var newNotes = req.body;
 
-  newnotes.routeName = newnotes.name.replace(/\s+/g, "").toLowerCase();
+  newNotes.routeName = newNotes.title.replace(/\s+/g, "").toLowerCase();
 
   console.log(newNotes);
 
-  characters.push(newNotes);
+  notes.push(newNotes);
 
   res.json(newNotes);
 });

@@ -1,7 +1,7 @@
 class Note {
-  constructor(name, message) {
-    this.name = name;
-    this.message = message;
+  constructor(title, text) {
+    this.title = title;
+    this.text = text;
   }
 }
 
