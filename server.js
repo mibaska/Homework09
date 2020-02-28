@@ -8,7 +8,7 @@ var PORT = process.env.PORT || 3000;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(express.static(__dirname + './public/css/styles.css'));
+app.use('/static', express.static('public'));
 
 var notes = [];
 
